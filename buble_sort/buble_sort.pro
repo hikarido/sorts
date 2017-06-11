@@ -8,10 +8,10 @@ QT       += core
 
 QT       -= gui
 
-TARGET = buble_sort
-CONFIG   += console
-CONFIG   -= app_bundle
-
+TARGET  = buble_sort
+CONFIG  += console
+CONFIG  -= app_bundle
+CONFIG  += c++11
 TEMPLATE = app
 
 
