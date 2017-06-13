@@ -26,9 +26,10 @@ void print_array(int *array, const unsigned int size)
 {
     if(array != nullptr)
     {
+        QDebug msg = qDebug();
         for(unsigned int i = 0; i < size; i++)
         {
-            qDebug() << "\t" <<  array[i];
+            msg << array[i];
         }
         return;
     }
