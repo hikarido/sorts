@@ -4,8 +4,7 @@
 
 /**
   * @brief buble_sort
-  * просьая орттровка методом пузырька без лишнх сравненей.
-  *  j начинает проод с конца массива
+  * простая сорттровка методом пузырька
   * @param array
   * указатель на сортируемый массив
   * @param size
@@ -15,9 +14,9 @@
  {
     for(int i = 0; i < size; i++)
     {
-        for(int j = size - 1; j > i; j--)
+        for(int j = 0; j < size; j++)
         {
-            if(array[i] < array[j])
+            if(array[j] < array[i])
             {
                //int tmp = array[i];
                //array[i] = array[j];
