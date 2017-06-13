@@ -1,10 +1,11 @@
 #include <algorithm>
 #include <QDebug>
-#include <random>
+#include "aux_func.h"
 
 /**
   * @brief buble_sort
   * простая сорттровка методом пузырька
+  * сортирует array по возростанию
   * @param array
   * указатель на сортируемый массив
   * @param size
@@ -18,3 +19,5 @@
  * @return
  */
 int buble_sort_test();
+
+void  no_stupid_buble_sort(int *array, const int size);
