@@ -15,9 +15,23 @@ int *make_random_array(const unsigned int size,
     for(unsigned int i = 0; i < size; i++)
     {
         array[i] = dr(dv);
-        qDebug() << "\t" <<  array[i];
     }
 
     return array;
 
+}
+
+
+void print_array(int *array, const unsigned int size)
+{
+    if(array != nullptr)
+    {
+        for(unsigned int i = 0; i < size; i++)
+        {
+            qDebug() << "\t" <<  array[i];
+        }
+        return;
+    }
+
+    qDebug() << "pointer is invalid";
 }

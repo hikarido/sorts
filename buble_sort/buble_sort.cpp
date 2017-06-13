@@ -31,17 +31,12 @@ int buble_sort_test()
         qFatal("nullptr from \"make_random_array\"");
     }
 
-    for(int i = 0; i < size; i++)
-    {
-        qDebug() << "\t" <<  array[i];
-    }
+    qDebug() << "unsorted";
+    print_array(array, size);
 
     buble_sort(array, size);
     qDebug() << "sorted";
-    for(int i = 0; i < size; i++)
-    {
-        qDebug() << "\t" << array[i];
-    }
+    print_array(array, size);
     qDebug() << "buble sort test end";
 
     delete[] array;
@@ -71,4 +66,27 @@ void no_stupid_buble_sort(int *array, const int size)
             }
         }
     }
+}
+
+
+int no_stupid_buble_sort_test()
+{
+    const int min = -10;
+    const unsigned int max = 10;
+    const unsigned int size = 10;
+    int * array = make_random_array(size, min, max);
+    if(array == nullptr)
+    {
+        qFatal("nullptr from \"make_random_array\"");
+    }
+
+    qDebug() << "unsorted";
+    print_array(array, size);
+    no_stupid_buble_sort(array, size);
+    qDebug() << "sorted";
+    print_array(array, size);
+    qDebug() << "no stupid buble sort test end";
+    delete[] array;
+    return 0;
+
 }

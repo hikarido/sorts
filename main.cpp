@@ -9,10 +9,12 @@
  * @return
  */
 int main(int argc, char *argv[])
+
 {
     QCoreApplication a(argc, argv);
 
-    buble_sort_test();
+    //buble_sort_test();
+    no_stupid_buble_sort_test();
     return a.exec();
 }
 

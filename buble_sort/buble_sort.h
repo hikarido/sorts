@@ -20,4 +20,19 @@
  */
 int buble_sort_test();
 
+/**
+ * @brief no_stupid_buble_sort
+ * сортирует array по возротанию  стем о личием от
+ * @see buble_sort что индекс j отсчитывается от конца
+ * array тем самым исключается проход по уже
+ * отсортиршванной области  индекс которой < i
+ * @param array
+ * @param size
+ */
 void  no_stupid_buble_sort(int *array, const int size);
+
+/**
+ * @brief no_stupid_buble_sort_test
+ * @return
+ */
+int no_stupid_buble_sort_test();
