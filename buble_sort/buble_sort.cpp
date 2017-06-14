@@ -103,7 +103,6 @@ void canonical_buble_sort(int *array, const unsigned int size)
                 std::swap(array[j], array[j - 1]);
             }
         }
-        print_array(array, size);
     }
 }
 
@@ -125,8 +124,8 @@ int canonical_buble_sort_test()
     qDebug() << "sorted";
 
     print_array(array, size);
-//    qDebug() << "canonical buble sort test end";
-//    delete[] array;
+    qDebug() << "canonical buble sort test end";
+    delete[] array;
     return 0;
 
 }
