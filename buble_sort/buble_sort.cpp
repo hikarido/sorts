@@ -90,3 +90,43 @@ int no_stupid_buble_sort_test()
     return 0;
 
 }
+
+
+void canonical_buble_sort(int *array, const unsigned int size)
+{
+    for(unsigned int i = 0; i < size; i++)
+    {
+        for(unsigned int j = size - 1; j > i; j--)
+        {
+            if(array[j] < array[j - 1])
+            {
+                std::swap(array[j], array[j - 1]);
+            }
+        }
+        print_array(array, size);
+    }
+}
+
+
+int canonical_buble_sort_test()
+{
+    const int min = -10;
+    const unsigned int max = 10;
+    const unsigned int size = 10;
+    int * array = make_random_array(size, min, max);
+    if(array == nullptr)
+    {
+        qFatal("nullptr from \"make_random_array\"");
+    }
+
+    qDebug() << "unsorted";
+    print_array(array, size);
+    canonical_buble_sort(array, size);
+    qDebug() << "sorted";
+
+    print_array(array, size);
+//    qDebug() << "canonical buble sort test end";
+//    delete[] array;
+    return 0;
+
+}

@@ -4,7 +4,7 @@
 
 /**
   * @brief buble_sort
-  * простая сорттровка методом пузырька
+  * простая сортировка методом пузырька
   * сортирует array по возростанию
   * @param array
   * указатель на сортируемый массив
@@ -36,3 +36,19 @@ void  no_stupid_buble_sort(int *array, const int size);
  * @return
  */
 int no_stupid_buble_sort_test();
+
+/**
+ * @brief canonical_buble_sort
+ * минимальный элемент "всплыат" к началу массива
+ * j определяет сравниваемую пару
+ * i определяет зону еще не порядоченных значений
+ * @param array
+ * @param size
+ */
+void canonical_buble_sort(int * array, const unsigned int size);
+
+/**
+ * @brief canonical_buble_sort_test
+ * @return
+ */
+int canonical_buble_sort_test();
