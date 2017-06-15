@@ -52,3 +52,15 @@ void canonical_buble_sort(int * array, const unsigned int size);
  * @return
  */
 int canonical_buble_sort_test();
+
+/**
+ * @brief shacker_sort
+ * шейкерная ортировка
+ * проверяет был ли произведен обмен на проходе, его
+ * пощицию, произволит проход до j вправо и влево
+ * @param array
+ * @param size
+ */
+void shacker_sort(int * array, const unsigned int size);
+
+int shacker_sort_test();

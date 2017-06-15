@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 
 //    buble_sort_test();
 //    no_stupid_buble_sort_test();
-    canonical_buble_sort_test();
+//    canonical_buble_sort_test();
+    shacker_sort_test();
     return a.exec();
 }
 
