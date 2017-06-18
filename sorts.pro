@@ -7,10 +7,12 @@ SOURCES += \
     main.cpp \
     buble_sort/buble_sort.cpp \
     aux_func.cpp \
-    selection_sort/selection_sort.cpp
+    selection_sort/selection_sort.cpp \
+    insertation_sort/insertation_sort.cpp
 
 HEADERS += \
     buble_sort/buble_sort.h \
     aux_func.h \
-    selection_sort/selection_sort.h
+    selection_sort/selection_sort.h \
+    insertation_sort/insertation_sort.h
 

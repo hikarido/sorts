@@ -2,7 +2,7 @@
 #include <QDebug>
 #include "buble_sort/buble_sort.h"
 #include "selection_sort/selection_sort.h"
-
+#include "insertation_sort/insertation_sort.h"
 /**
  * @brief main make test for sorts
  * @param argc
@@ -18,7 +18,8 @@ int main(int argc, char *argv[])
 //    no_stupid_buble_sort_test();
 //    canonical_buble_sort_test();
 //    shacker_sort_test();
-    selection_sort_test();
+//    selection_sort_test();
+    insertation_sort_test();
     return a.exec();
 }
 
