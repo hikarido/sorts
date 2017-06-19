@@ -1,4 +1,0 @@
-#ifndef INSERTATION_SORT_H
-#define INSERTATION_SORT_H
-
-#endif // INSERTATION_SORT_H
