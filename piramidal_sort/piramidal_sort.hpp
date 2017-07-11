@@ -32,8 +32,10 @@ int get_right(const int i);
  * vector в котором располагается сортируемая тройка
  * @param i
  * индекс parent
+ * @param heap_size
+ * размер рассматриваемой области массива, нужен для усечения с конца
  */
-void  max_heapify(vector<int> & array, const int i);
+void  max_heapify(vector<int> & array, const int i, const int heap_size);
 
 /**
  * @brief build_max_heap
